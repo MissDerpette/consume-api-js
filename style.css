@@ -1,0 +1,24 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+#item-form {
+    background-color: red;
+        width: 80%;
+}
+
+#output {
+    background-color: lightblue;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: yellow;
+    padding: 20px;
+  }
+
