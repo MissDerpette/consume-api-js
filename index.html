@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON from API</title>
+</head>
+<body>
+
+    
+    <script>
+        const apiUrl = "http://206.189.148.20:8080/api/get"
+        async function getData() {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            // console.log(data); 
+
+
+
+            // console.table(data)
+
+            // console.log(data[0].name);
+            return data
+        }
+
+        // product_list = getData();
+        // for (var i = 0;i < product_list.length ; i++  ){
+        //     product = product_list[i]
+        //     console.log(i)
+        //     console.log( product)
+        //     console.log(product.name)
+        // }
+        // 
+
+        async function processProducts() {
+    try {
+      const product_list = await getData();
+      for (let i = 0; i < product_list.length; i++) {
+        const product = product_list[i];
+        console.log(i);
+        console.log(product);
+        console.log(product.name);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
+  processProducts();
+
+    </script>
+    
+</body>
+</html>
