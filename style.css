@@ -7,18 +7,46 @@ body, html {
   font-family: Arial;
 }
 
-#item-form {
-    background-color: red;
-        width: 80%;
+
+.container {
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
+
+#item-form {
+  background-color: red;
+  width: 50%;
+  margin: 2px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form-container {
+  background-color: blueviolet;
+  align-content: center;
+}
+
 
 #output {
     background-color: lightblue;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
-.container {
-    border-radius: 5px;
-    background-color: yellow;
-    padding: 20px;
-  }
-
+.wrapper-output {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
